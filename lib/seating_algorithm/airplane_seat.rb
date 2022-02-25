@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SeatingAlgorithm
 
   class MissingRequiredParameterError < StandardError; end
@@ -6,19 +8,20 @@ module SeatingAlgorithm
 
   class AirplaneSeat
 
-    REQUIRED_FIELDS = %i[div pos row col]
+    REQUIRED_FIELDS = %i[div pos row col].freeze
 
     PRIORITY_WEIGHT = {
       pos: 1_000_000_000,
       row: 1_000_000,
       div: 1_000,
       col: 1,
-    }
+    }.freeze
+
     POSITION_WEIGHT = {
       aisle: 1,
       window: 2,
       center: 3,
-    }
+    }.freeze
 
     attr_accessor(*REQUIRED_FIELDS)
     attr_accessor :passenger, :name

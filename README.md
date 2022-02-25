@@ -12,18 +12,20 @@ A program that helps seat audiences in a flight based on the following input and
 1. A 2D array that represents the columns and rows - Ex. [[3,4], [4,5], [2,3], [3,4]]
 2. Number of passengers waiting in the queue.
 
-    
-    $ ruby main.rb
-    Input a 2D array that represents the columns and rows - Ex. [[3,2], [4,3], [2,3], [3,4]]:
-    [[3,2], [4,3], [2,3], [3,4]]
-    Input number of passengers waiting in the queue:
-    30
-    
-    Seating Arrangement
-    19  25  1       2   26  27  3       4   5       6   28  20
-    21  29  7       8   30      9       10  11      12      22
-                    13          14      15  16      17      23
-                                                    18      24
+### Demo
+```
+$ ruby main.rb
+Input a 2D array that represents the columns and rows - Ex. [[3,2], [4,3], [2,3], [3,4]]:
+[[3,2], [4,3], [2,3], [3,4]]
+Input number of passengers waiting in the queue:
+30
+
+Seating Arrangement
+19  25  1       2   26  27  3       4   5       6   28  20
+21  29  7       8   30      9       10  11      12      22
+                13          14      15  16      17      23
+                                                18      24
+```
 
 ## Running
 

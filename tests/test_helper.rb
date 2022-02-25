@@ -1,0 +1,5 @@
+require './lib/seating_algorithm'
+require 'minitest/autorun'
+require 'minitest/unit'
+require 'minitest/pride'
+# require 'minitest/mock'

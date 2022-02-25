@@ -96,9 +96,5 @@ module SeatingAlgorithm
       @seats_by_seating_order ||= seats.sort_by(&:seating_order)
     end
 
-    def seats_by_structure_order
-      @seats_by_structure_order ||= seats.sort_by(&:name)
-    end
-
   end
 end
